@@ -14,6 +14,7 @@ class GenresController < ApplicationController
   
   def create 
     @genre = Genre.create!(genre_params)
+    redirect_to @genre
   end
   
   def edit 
